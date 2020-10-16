@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FormMaths</title>
+  <link rel="stylesheet" href="../../css/geometry.css">
+  <!--BOOSTRAP-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../../index.html">Inicio<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./geometry.html">Geometría</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../converter/mainConverter.html">Conversor</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="card mb-5 mt-5 ml-5 mr-5 wd-100">
+      <h2 style="margin: 2rem;">Rectangulo</h2>
+      <div class="content mx-2 mb-5">
+        <div class="dropdown mx-5">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Elija
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <a href="./circle.html">
+              <button class="dropdown-item">Circulo</button>
+            </a>
+            <a href="./squard.html">
+              <button class="dropdown-item">Cuadrado</button>
+            </a>
+            <a href="./rectangle.html">
+              <button class="dropdown-item">Rectangulo</button>
+            </a>
+            <a href="./triangle.html">
+              <button class="dropdown-item">Triangulo</button>
+            </a>
+            <a href="./polygon.html">
+              <button class="dropdown-item">Poligono</button>
+            </a>
+            <a href="./rhombus.html">
+              <button class="dropdown-item">Rombo</button>
+            </a>
+            <a href="./parallelogram.html">
+              <button class="dropdown-item">Paralelogramo</button>
+            </a>
+            <a href="./trapezium.html">
+              <button class="dropdown-item">Trapecio</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="../../img/Rectangle.png" class="card-img" >
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2>Área</h2>
+              <div class="row mb-3">
+                <div class="col">
+                  <input id="inputFirst" type="number" class="form-control" placeholder="Base (b)" step="0.01" value="0" min="0">
+                  <select id="inputStateFirst" class="form-control mt-2">
+                    <option>Milímetros</option>
+                    <option>Centímetros</option>
+                    <option>Decímetros</option>
+                    <option>Metros</option>
+                    <option>Decámetros</option>
+                    <option>Hectómetros</option>
+                    <option>Kilómetros</option>
+                  </select>
+                  <input id="inputSecond" type="number" class="form-control mt-2" placeholder="Altura (h)" step="0.01" value="0" min="0">
+                  <select id="inputStateSecond" class="form-control mt-2">
+                    <option>Milímetros</option>
+                    <option>Centímetros</option>
+                    <option>Decímetros</option>
+                    <option>Metros</option>
+                    <option>Decámetros</option>
+                    <option>Hectómetros</option>
+                    <option>Kilómetros</option>
+                  </select>
+                  <button class="btn btn-primary mt-3" onclick="calculeAreaRectangle();" >Calcular</button>
+                </div>
+                <div class="col">
+                  <input id="outputFirst" type="number" class="form-control" disabled>
+                  <select id="inputStateThird" class="form-control mt-2">
+                    <option>Milímetros Cuadrados</option>
+                    <option>Centímetros Cuadrados</option>
+                    <option>Decímetros Cuadrados</option>
+                    <option>Metros Cuadrados</option>
+                    <option>Decámetros Cuadrados</option>
+                    <option>Hectómetros Cuadrados</option>
+                    <option>Kilómetros Cuadrados</option>
+                  </select>
+                </div>
+              </div>
+              <h2>Perimetro</h2>
+              <div class="row">
+                <div class="col">
+                  <input id="inputThird" type="number" class="form-control" placeholder="Base (b)" step="0.01" value="0" min="0">
+                  <select id="inputStateFourth" class="form-control mt-2">
+                    <option>Milímetros</option>
+                    <option>Centímetros</option>
+                    <option>Decímetros</option>
+                    <option>Metros</option>
+                    <option>Decámetros</option>
+                    <option>Hectómetros</option>
+                    <option>Kilómetros</option>
+                  </select>
+                  <input id="inputFourth" type="number" class="form-control mt-2" placeholder="Altura (h)" step="0.01" value="0" min="0">
+                  <select id="inputStateFifth" class="form-control mt-2">
+                    <option>Milímetros</option>
+                    <option>Centímetros</option>
+                    <option>Decímetros</option>
+                    <option>Metros</option>
+                    <option>Decámetros</option>
+                    <option>Hectómetros</option>
+                    <option>Kilómetros</option>
+                  </select>
+                  <button class="btn btn-primary mt-3" onclick="calculePerimeterRectangle()">Calcular</button>
+                </div>
+                <div class="col">
+                  <input id="outputSecond" type="number" class="form-control" disabled>
+                  <select id="inputStateSixth" class="form-control mt-2">
+                    <option>Milímetros</option>
+                    <option>Centímetros</option>
+                    <option>Decímetros</option>
+                    <option>Metros</option>
+                    <option>Decámetros</option>
+                    <option>Hectómetros</option>
+                    <option>Kilómetros</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../../js/scriptGeometry.js"></script>
+</body>
+
+</html>

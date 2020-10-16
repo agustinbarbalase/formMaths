@@ -1,0 +1,53 @@
+* {
+    font-family: Cambria;
+    font-size: 1rem;
+}
+
+#mainCard {
+    margin: 3rem 3rem;
+    border: .5px solid #000000;
+    background-color: #fd7e14;
+}
+
+.dropdown {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem; 
+}
+
+#dropdownMenu {
+    border: .5px solid #000000;
+}
+
+#title {
+    color: #ffffff;
+    padding-bottom: 1rem;
+}
+
+#change {
+    margin-bottom: 1rem;
+    background-color: #007bff;
+    color: #ffffff;
+    border: .5px solid #000000;
+}
+
+.forms {
+    margin: .25rem 0rem;
+}
+
+#calcule {
+    margin-bottom: 3rem;
+    background-color: #007bff;
+    color: #ffffff;
+    border: .5px solid #000000;
+}
+
+.footer {
+    position: relative;
+    min-width: 100%;
+    top: 13rem;
+    text-align: center;
+    align-items: unset;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 1rem 0rem;
+}

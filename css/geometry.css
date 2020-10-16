@@ -1,0 +1,19 @@
+* {
+    font-family: Cambria ;
+    font-size: 1rem ;
+}
+
+.card {
+    margin: 0rem 3rem;
+    margin-bottom: 3rem;
+}
+
+.footer {
+    position: relative;
+    min-width: 100%;
+    top: 2rem;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 1rem 0rem;
+}

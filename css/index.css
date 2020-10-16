@@ -1,0 +1,28 @@
+* {
+    font-family: Cambria;
+    font-size: 1rem;
+}
+
+body {
+    background-image: url(../img/Background.png);
+}
+
+#header-title {
+    margin: 0.5rem 1rem;
+    padding-top: 1rem;
+    font-weight: bold;
+}
+
+.card-body {
+    text-align: justify;
+}
+
+.footer {
+    position: relative;
+    min-width: 100%;
+    bottom: 0%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 1rem 0rem;
+}
