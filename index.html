@@ -1,95 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FormMaths</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <!--BOOTSTRAP-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FormMaths</title>
-  <link rel="stylesheet" href="./css/index.css">
-  <!--BOOTSTRAP-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="./index.html">Inicio<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./html/geometry/geometry.html">Geometría</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./html/converter/mainConverter.html">Conversor</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <main>
-    <div class="card text-white bg-danger mb-5 ml-5 mt-5 mr-5 wd-100">
-      <header id="header-title">
-        FormMaths
-      </header>
-      <div class="card-body">
-        <p class="card-text">
-          FormMaths es una aplicación web destinada a ayudar a los chicos para dificultades en distintas áreas de las
-          ciencias exactas, enseñar nuevas habilidades y promover el aprendizaje de las ciencias duras, como las
-          matemáticas y la física. De momento, la aplicación cuenta con ayudas para la geometría y un convertidor de
-          unidades.
-        </p>
-        <p class="card-text">
-          La idea es que la aplicación se no solo una ayuda, sino que además promueva las ganas de aprender nuevas
-          ciencias, que representarán y serán protagonistas del futuro próximo. En las mayorías de los casos, estas
-          representan una dificultad y un desinterés en los más chicos, y son de las mas demandadas y requeridas en la
-          solución de problemas de diferentes áreas laborales y científicas.
-        </p>
-        <p class="card-text">
-          Hacer ciencia representa no solo una forma de pensar y de ver las cosas con el objetivo de solucionar
-          problemas, sino también que ciencia es sinónimo de progreso humano, por eso con esta pequeña aplicación se
-          pretende mantener las ganas de aprender y enseñar ciencia.
-        </p>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html"
+              >Inicio<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./html/geometry/geometry.html"
+              >Geometría</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./html/converter/mainConverter.html"
+              >Conversor</a
+            >
+          </li>
+        </ul>
       </div>
-    </div>
-  </main>
-  <div style="margin: 1rem;">
-    <div class="row">
-      <div class="col">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/iaXLDz_UeYY" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+    </nav>
+    <main>
+      <div class="card text-white bg-danger mb-5 ml-5 mt-5 mr-5 wd-100">
+        <header id="header-title">FormMaths</header>
+        <div class="card-body">
+          <p class="card-text">
+            FormMaths es una aplicación web destinada a ayudar a los chicos para
+            dificultades en distintas áreas de las ciencias exactas, enseñar
+            nuevas habilidades y promover el aprendizaje de las ciencias duras,
+            como las matemáticas y la física. De momento, la aplicación cuenta
+            con ayudas para la geometría y un conversor de unidades.
+          </p>
+          <p class="card-text">
+            La idea es que la aplicación sea no solo una ayuda, sino que además
+            promueva las ganas de aprender nuevas ciencias, que representarán y
+            serán protagonistas del futuro. En las mayorías de los casos, estas
+            representan una dificultad y un desinterés en los más chicos, y son
+            de las mas demandadas y requeridas en la solución de problemas de
+            diferentes áreas laborales y científicas.
+          </p>
+          <p class="card-text">
+            Hacer ciencia representa no solo una forma de pensar y de ver las
+            cosas con el objetivo de solucionar problemas, sino también que
+            ciencia es sinónimo de progreso humano, por eso con esta pequeña
+            aplicación se pretende mantener las ganas de aprender y enseñar
+            ciencia.
+          </p>
         </div>
       </div>
-      <div class="col">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/7R7dnT2043M" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+    </main>
+    <div style="margin: 1rem">
+      <div class="row">
+        <div class="col">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/iaXLDz_UeYY"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="col">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/7R7dnT2043M"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <footer>
-    <div class="footer">
-      &copy; Copyright 2020
-    </div>
-  </footer>
-</body>
-
+    <footer>
+      <div class="footer">&copy; Copyright 2020</div>
+    </footer>
+  </body>
 </html>
